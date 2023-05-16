@@ -1,0 +1,30 @@
+<!--Exercicio 11 - Faça de novo um programa de chute de segredo. Faça uma caixa de entrada para uma variavel, faça um botão que tenha foco e limpe aotimaticamente, programa so pode rodar quando o botão for apertado-->
+
+
+<meta charset="UTF-8">
+
+<input/>
+<button>Faça seu chute!</button>
+
+<script>
+
+    var segredo = Math.round(Math.random()*10);
+
+    var input = document.querySelector("input");
+    input.focus();
+    
+    function verifica(){
+        if (input.value==segredo){
+            alert("Vc acertou!!!");
+        } else{
+            alert("Vc errou!!!");
+        }
+        input.focus();
+        input.value=""
+    }
+
+    var button = document.querySelector("button");
+    button.onclick = verifica;
+
+
+</script>

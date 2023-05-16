@@ -1,0 +1,29 @@
+<!--Exercicio 8 - Faça a tabuada do 7 com while e for  (Use o pulaLinha e mostra de outro programa)-->
+
+<meta chatset="UTF-8">
+
+<script>
+
+    function pulaLinha(){
+        document.write("<br>");
+        document.write("<br>");
+    }
+    function mostra(frase){
+        document.write(frase);
+        pulaLinha();
+    }
+
+    var tabuada = prompt("Qual tabuada vc quer calcular? 1-10");
+
+    var multiplicador = 1;
+
+    while(multiplicador <=10){
+        mostra(tabuada + "x" + multiplicador + "=" + multiplicador*tabuada);
+        multiplicador++
+    }
+
+
+    for(multiplicador = 1; multiplicador <= 10; multiplicador++) {
+        mostra(tabuada + "x" + multiplicador + "=" + multiplicador*tabuada);
+    }
+</script>

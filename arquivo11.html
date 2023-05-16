@@ -1,0 +1,41 @@
+<!--Exercicio 11 - Faça de novo um programa de chute de segredo. Faça uma caixa de entrada para uma variavel, faça um botão que tenha foco e limpe aotimaticamente, programa so pode rodar quando o botão for apertado-->
+
+
+<meta charset="UTF-8">
+
+<!-- input entrada, abre uma caixinha para preencher no html -->
+<input/>
+<button>Compare com o meu segredo</button>
+<!-- coloca um botão, tem que abrir e fechar -->
+
+<script>
+    //Math.round=arredonda   Math.random=numero aleatorio entre 0 e 1
+    var segredo = Math.round(Math.random() * 10);
+
+    // para chamar o imput do html para o javascript, querySelector(imput)
+    var input = document.querySelector("input");
+    input.focus();
+    // da foco na caixinha assim que abre o arquivo
+
+    function verifica() {
+
+        if(input.value == segredo) {
+
+        alert("Você ACERTOU!");
+        } 
+        else {
+
+        alert("Você ERROU!!!!!!!!");
+        }
+
+        // da foco na caixinha e limpa 
+        imput.value= ""
+        input.focus();
+    }
+
+  
+    var button = document.querySelector("button");
+    //Para o teste iniciar apenas quando apertar o botão, button.onclick
+    button.onclick = verifica;
+
+</script>

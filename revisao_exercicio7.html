@@ -1,0 +1,28 @@
+<!--Exercicio 7 - Mostre todos os anos de copa a partir de 1930 até 2023, lembrando que não teve copa em 1942 e 1946, e mostre todos os resultados. (Use o pulaLinha e mostra de outro programa)-->
+
+<meta chatset="UTF-8">
+
+<script>
+
+    function pulaLinha(){
+        document.write("<br>");
+        document.write("<br>");
+    }
+    function mostra(frase){
+        document.write(frase);
+        pulaLinha();
+    }
+
+    var anoCopa = 1930;
+
+    while(anoCopa<2023){
+
+        if (anoCopa == 1942 || anoCopa == 1946){
+            mostra("O ano de " + anoCopa +" não te copa devido a guerra.")
+        } else {
+            mostra(anoCopa)
+        }
+
+        anoCopa = anoCopa + 4;
+    }
+</script>

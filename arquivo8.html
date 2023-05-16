@@ -1,0 +1,36 @@
+<!--Exercicio 8 - Faça a tabuada do 7 com while e for  (Use o pulaLinha e mostra de outro programa)-->
+
+<meta charset="UTF-8">
+
+<script>
+
+    function pulaLinha() {
+
+        document.write("<br>");
+        document.write("<br>");
+}
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+}
+
+var multiplicador = 1;
+
+while(multiplicador <= 10) {
+
+    mostra(7 * multiplicador);
+    multiplicador = multiplicador + 1
+}
+
+for(multiplicador = 1; multiplicador <= 10; multiplicador++) {
+
+mostra(7 * multiplicador);
+
+}
+
+
+mostra("FIM");
+
+</script>

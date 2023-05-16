@@ -1,0 +1,40 @@
+
+<meta charset="UTF-8">
+
+<h1>Com as primeiras funções tudo fica mais facil!!!</h1>
+
+<script>
+
+function pulaLinha(){
+    document.write("<br>");
+    document.write("<br>");
+}
+
+function mostra(frase){
+    document.write(frase);
+    pulaLinha();
+
+}
+
+var x1= parseInt(prompt("Apresente o primeiro numero: "));
+var x2= parseInt(prompt("Apresente o segundo numero: "));
+var x3= parseInt(prompt("Apresente o terceiro numero: "));
+var x4= parseInt(prompt("Apresente o quarto numero: "));
+var x5= parseInt(prompt("Apresente o quinto numero: "));
+
+mostra("O primeiro numero apresentado: " + x1);
+mostra("O segundo numero apresentado: " + x2);
+mostra("O terceiro numero apresentado: " + x3);
+mostra("O querto numero apresentado: " + x4);
+mostra("O quinto numero apresentado: " + x5);
+
+function media(){
+
+    var media = (x1+x2+x3+x4+x5)/5
+    mostra("A média dos numeros é: " + media);
+
+}
+
+media();
+
+</script>

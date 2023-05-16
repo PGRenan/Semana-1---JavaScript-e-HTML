@@ -1,0 +1,38 @@
+<!--Exercicio 6 - Prepara um programa para chutar um numero aleatorio de 1 a 10, com um maximo de 3 tentativas. (Use o pulaLinha e mostra de outro programa)-->
+
+<meta chatset="UTF-8">
+
+<script>
+
+    function pulaLinha(){
+        document.write("<br>");
+        document.write("<br>");
+    }
+    function mostra(frase){
+        document.write(frase);
+        pulaLinha();
+    }
+
+    var segredo = Math.round(Math.random()*10)
+    tentativa=1
+
+
+
+ while(tentativa <= 3){
+
+    var chute = prompt("Qual seu chute?")
+    
+        if(segredo == chute){
+
+            mostra("Você acertou!!")
+            break
+
+        }
+        else{
+            mostra("Não foi desta vez")
+        }
+    
+    tentativa++
+}
+
+</script>

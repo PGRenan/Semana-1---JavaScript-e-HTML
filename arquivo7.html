@@ -1,0 +1,30 @@
+<!--Exercicio 7 - Mostre todos os anos de copa a partir de 1930 até 2023, lembrando que não teve copa em 1942 e 1946, e mostre todos os resultados. (Use o pulaLinha e mostra de outro programa)-->
+
+<meta charset="UTF-8">
+
+<script>
+
+    function pulaLinha() {
+
+    document.write("<br>");
+    document.write("<br>");
+}
+
+function mostra(frase) {
+
+    document.write(frase);
+    pulaLinha();
+}
+
+var limite = parseInt(prompt("Entre com a data limite"));
+
+var anoCopa = 1930;
+
+while(anoCopa <= limite) {
+
+    mostra("Teve copa em " + anoCopa);
+    anoCopa = anoCopa + 4;
+}
+
+mostra("FIM");
+</script>
